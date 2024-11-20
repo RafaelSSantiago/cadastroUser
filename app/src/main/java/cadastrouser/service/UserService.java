@@ -1,7 +1,7 @@
-package main.java.cadastrouser.service;
+package cadastrouser.service;
 
 import cadastrouser.model.User;
-import cadastrouser.repository.UserRepository;
+import cadastrouser.repository.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -12,7 +12,7 @@ public class UserService {
   private UserRepository userRepository;
 
   @Autowired
-  private PassWordEncoder passwordEncoder;
+  private PasswordEncoder passwordEncoder;
 
   public User save(User user){
     user.setPassword(passwordEncoder.encode(user.getPassword()));

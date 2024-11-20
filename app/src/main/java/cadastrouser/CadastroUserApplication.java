@@ -1,4 +1,4 @@
-package main.java.cadastrouser;
+package cadastrouser;
 
 import javax.swing.Spring;
 
@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class CadastroUserApplication {
-  public static void main(string[] args){
+  public static void main(String[] args){
     SpringApplication.run(CadastroUserApplication.class, args);
   }
 }

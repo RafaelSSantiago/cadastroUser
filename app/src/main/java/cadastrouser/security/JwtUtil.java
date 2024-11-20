@@ -1,8 +1,7 @@
-package main.java.cadastrouser.security;
+package cadastrouser.security;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
-import io.jsonwebtoken.SignatureAlgorithm;
 import org.springframework.stereotype.Component;
 
 import java.util.Date;
@@ -19,7 +18,7 @@ public class JwtUtil {
                .compact();
   }
 
-  public Claims extractClaims(string token){
+  public Claims extractClaims(String token){
     return Jwts.parser()
                .setSigningKey(secret)
                .parseClaimsJws(token)

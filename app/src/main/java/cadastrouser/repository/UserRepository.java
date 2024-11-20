@@ -1,9 +1,9 @@
-package main.java.cadastrouser.repository;
+package cadastrouser.repository;
 
 import cadastrouser.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-interface UserRepository extends JpaRepository<user, Long> {
+public interface UserRepository extends JpaRepository<User, Long> {
   User findByUsername(String username);
 
 }
