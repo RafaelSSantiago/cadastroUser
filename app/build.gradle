@@ -1,11 +1,8 @@
-
 plugins {
     id 'application'
     id 'org.springframework.boot' version '3.0.0'
     id 'io.spring.dependency-management' version '1.0.11.RELEASE'
     id 'java'
-
-
 }
 
 repositories {
@@ -24,8 +21,6 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'org.springframework.security:spring-security-test'
     implementation 'javax.persistence:javax.persistence-api:2.2'
-
-
 }
 
 java {
@@ -35,7 +30,7 @@ java {
 }
 
 application {
-    mainClass = 'cadastrouser.App'
+    mainClass = 'cadastrouser.CadastroUserApplication'
 }
 
 tasks.named('test') {
